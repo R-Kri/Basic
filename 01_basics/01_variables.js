@@ -6,6 +6,7 @@ let accountState;
 /*
 Prefer not to use var
 because of issue in block scope and functional scope
+we will discuss about this further later
 */ 
 // accountId=2 //Constant keyword cannot be changed
 accountEmail = "world@gmail.com"
