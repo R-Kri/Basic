@@ -28,7 +28,7 @@ console.log(tinderUser);
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 
-const obj3 = {obj1, obj2}
+const obj3 = {obj1, obj2} // It'll not concatenate but just add both arrays to another array.
 console.log(obj3); // { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 
 // const obj4 = Object.assign({},obj1, obj2) // The Object.assign() static method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object. Object.assign(target, source); here "{}" is the target.
@@ -65,11 +65,11 @@ const users = [
 users[1].email
 console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // We can extract all the keys in the form of array. [ 'id', 'name', 'isLoggedin' ]
+console.log(Object.keys(tinderUser)); // We can extract all the keys in the form of an array. [ 'id', 'name', 'isLoggedin' ]
 console.log(Object.values(tinderUser)); // Similarly we can extract values
 console.log(Object.entries(tinderUser));
 
-// Sometimes what happens we try to extract a value which isn't even exist, here chances of crash increases.
+// Sometimes what happens we try to extract a value which doesn't even exist, here chances of crash increases.
 // To avoid crash we can check manually by asking
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // will give true
 console.log(tinderUser.hasOwnProperty('isLog')); // False

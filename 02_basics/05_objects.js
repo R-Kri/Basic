@@ -1,15 +1,17 @@
 // De-Structure of objects
+
 const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
 }
 // course.courseInstructor // Instead of writing this again and again to print multiple time we can use -
-const {courseInstructor: instructor} = course // Here we have de-structured the courseInstructor name to instructor. We can call the value stored in courseInstructor by instructor.
+const {courseInstructor: instructor} = course // Here we have de-structured the "courseInstructor" name to "instructor". We can call the value stored in courseInstructor by instructor.
 // console.log(courseInstructor);
 console.log(instructor);
 
-// this is how we write JSON
+
+// this is how we write JSON. JSON is a simple way to structure and exchange data between computers.
 // {
 //     "name": "hitesh",
 //     "courseName": "js in hindi",

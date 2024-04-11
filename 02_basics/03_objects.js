@@ -11,12 +11,13 @@ const JsUser = {
     "full name": "Hitesh Chaudhary",
     age: 18,
     mySym: "mykey1",
-    [mySym]: "mykey2", // To declare the symbol as a key of object.
+    [mySym]: "mykey2", // To declare the symbol as a key of object we use square bracket.
     location: "Delhi",
     email: "hitesh@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday","Saturday"] 
 }
+
 // Two methods to access
 console.log(JsUser.email); // Not needed to access like a string 
 console.log(JsUser["email"]); // Here we access like strings
@@ -30,7 +31,7 @@ console.log(JsUser[mySym]);
 JsUser.email = "hitesh@chatgpt.com"
 //Object.freeze(JsUser) // After freezing no changes will be applicable to the objects
 JsUser.email = "hitesh@bing.com"
-console.log(JsUser);
+console.log(JsUser); // It'll be updated as hitesh@bing.com in the object.
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
@@ -39,5 +40,6 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user,${this.name}`);
 }
 
-console.log(JsUser.greeting());
+console.log(JsUser.greeting);// It'll show undefined because of missing ().
+console.log(JsUser.greeting()); // True
 console.log(JsUser.greetingTwo());
