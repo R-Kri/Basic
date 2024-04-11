@@ -1,11 +1,13 @@
 let score = "33abc"
-
+// can write in bth ways
 console.log(typeof score);
 console.log(typeof (score));
 
 let valueInNumber = Number(score)
 console.log(typeof valueInNumber);
-console.log(valueInNumber);
+console.log(valueInNumber); // string converted into number but NaN will be print if its really not a number
+
+//JS has not strict check property
 
 //Even though 33abc is not a number but it is showing  datatype of number
 //It is a NaN. Don't blindly rely on datatype
@@ -41,8 +43,8 @@ console.log(str3)
 
 console.log("1" + 2);
 console.log(1 + "2");
-console.log("1" + 2 + 2); //String first so other 2 were also treated as string
-console.log(1 + 2 + "2"); // Number first then 2 in middle is also treated as number
+console.log("1" + 2 + 2); //String first so other 2 were also treated as string:output = 122
+console.log(1 + 2 + "2"); // Number first then 2 in middle is also treated as number: output=32
 
 console.log(+true); // prints 1 (but not a good practice)
 

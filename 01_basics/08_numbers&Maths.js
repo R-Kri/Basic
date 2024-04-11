@@ -1,7 +1,7 @@
 const score = 400 //generally JS automatically detect type as number
 console.log(score);
 // But we can also set manually
-const balance = new Number(100)
+const balance = new Number(100) // It'll set the datatype to number.
 console.log(balance);
 
 console.log(balance.toString().length); // After converting into strings we can use more additional properties which may be not present in number.
@@ -27,9 +27,10 @@ console.log(Math.floor(4.9)); // It will return the floor value(Lower) Output: 4
 // There are many more methods like sqrt(),max(),min(),pow() we can use with help of math library.
 
 // Math.random always gives random numbers between 0 to 1.
-console.log(Math.random()); // This gives us different ouput values like 0.93832492, 0.244445242, 0.034222445
+console.log(Math.random()); // This gives us different ouput between 0 and 1, values like 0.93832492, 0.244445242, 0.034222445
 console.log((Math.random()*10)+1); // to avoid a 0 number like 0.0348331 we perform the operation mutiplying by 10 so that we get like 5.459489,9.54385 and even then is it is 0 like 0.0284285 then it also adds 1 so we don't get 0 in any case and minimum it should be 1.
 
+// When we want a random number between 10 to 20.
 const min = 10
 const max = 20
 console.log(Math.floor(Math.random()*(max-min+1) + min));

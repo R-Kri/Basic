@@ -3,12 +3,12 @@
 // alert(3+3) //We are using nodejs not browser therefore can't be use this alert function for now.
 
 console.log(3+
-    3) // (Don't write like this) code readability should be high.
+    3) // It'll run but (Don't write like this) ,code readability should be high.
 let age=18;
 
 /*
 DATA TYPES
-number => upto 2 to power 53
+number => upto 2 to the power 53
 bigint (for very very large number of data)
 string => ""
 boolean => true or false

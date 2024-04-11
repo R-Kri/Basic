@@ -1,6 +1,6 @@
 // JavaScript Date objects represent a single moment in time in a platform-independent format. Date objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January 1, 1970.
 
-// All the count starts from jan 1 1970 in iliseconds.
+// All the count starts from jan 1 1970 in miliseconds.
 
 // DATES
 let myDate = new Date()
@@ -12,13 +12,13 @@ console.log(myDate.toLocaleDateString()); // 1/13/2024
 console.log(myDate.toLocaleString()); //1/13/2024, 4:45:42 PM
 console.log(myDate.toLocaleTimeString()); // 4:45:42 PM
 console.log(myDate.toTimeString()); // 16:45:42 GMT+0000 (Coordinated Universal Time)
-console.log(myDate.toUTCString()); // Sat, 13 Jan 2024 16:45:42 GMT
-console.log(myDate.getTimezoneOffset()); // 0
+console.log(myDate.toUTCString()); // Sat, 13 Jan 2024 16:45:42 GMT ; toUTCString() returns a date object as a string, according to UTC:
+console.log(myDate.getTimezoneOffset()); // 0 ; returns the difference between UTC time and local time. returns the difference in minutes.
 
 console.log(typeof myDate); // Type is Object.
 
-// let myCreatedDate = new Date(2023, 0, 23)
-// console.log(myCreatedDate.toDateString()); // Mon Jan 23 2023 => It tell us that month count starts with 0.
+//let myCreatedDate = new Date(2023, 0, 23)
+//console.log(myCreatedDate.toDateString()); // Mon Jan 23 2023 => It tell us that month count starts with 0.
 
 // let myCreatedDate = new Date(2023, 0, 23, 5, 3) // 1/23/2023, 5:03:00 AM => We can declare dates according to our need
 // console.log(myCreatedDate.toLocaleString()); 
@@ -45,7 +45,7 @@ console.log(newDate.getMonth()); // Output: 0 => As month count starts with 0.
 console.log(newDate.getMonth() + 1);
 console.log(newDate.getDay()); // Output: 6 => As it saturday today so it is counting it as 6.
 
-// Here we can define what we want. 
+// Here we can define what we want with customization of type of value.
 newDate.toLocaleString('default',{ // Press ctrl + space to view all the properties.
     weekday: "long",
 })

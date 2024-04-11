@@ -1,4 +1,4 @@
-// How do store data in memory and access from there on that basis
+// How data is stored in memory and access from there on that basis
 // two datatypes were created i) Primitive ii) Non-primitive or reference type
 
 /* PRIMITIVE - Call by value
@@ -15,7 +15,7 @@ Array, Objects, Functions */
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id===anotherId) // False cause symbol gives unique idetifier to everyone.
+console.log(id===anotherId) // False cause symbol gives unique idetifier to everyone even if data stored is same.
 
 const heroes = ["shaktiman","Nagraj"]; // for arrays
 
@@ -31,3 +31,4 @@ const myFunction = function(){
 }
 
 //Datatype of null shows "Object" when we use typeof function to get datatype.
+// Datatype of function returns function.(All non-primitive type comes under function datatype.)
