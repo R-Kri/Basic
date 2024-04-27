@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 class="heading" id="title">DOM learning on Chai aur Code <span style="display: none;"> Test Text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
+/* 
+Manipulation we can perform through console in brwser.
+
+It will set class attribute as test as well as heading. 
+document.getElementById('title').setAttribute('class','test heading')
+
+class attribute will be overwritten by the name test here.
+document.getElementById('title').setAttribute('class','test')
+
+To access attribute a/c to class and id.
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').getAttribute('id')
+
+To change style(but not a good practice.)
+title.style.backgroundColor = 'green'
+*/
+
+/* DIFFERENCE BETWEEN .innerText and .textContent is that innerText wahi texts show karta hai jo visible hota hai display main lekin innerContent jab likhte hai tab woh sara texts ya content dikhta hai jo kisi property ya css ke wajah se hide kardi thi. jese display:none kiya hua text bhi show kardeta hai.
+*/
+
+/*
+Example:
+title.innerHTML
+'DOM learning on Chai aur Code <span style="display: none;"> Test Text</span>'
+
+title.textContent
+'DOM learning on Chai aur Code  Test Text' 
+
+title.innerText
+'DOM learning on Chai aur Code'
+*/
+
+// QUERY SELECTOR => document.querySelector('.class')

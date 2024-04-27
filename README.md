@@ -1,2 +1,0 @@
-# Basic
-JS basic codes
