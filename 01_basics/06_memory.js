@@ -9,8 +9,8 @@ let name = "Thor"
 let anothername = name
 anothername = " Hella"
 
-console.log(name);
-console.log(anothername);
+console.log(name); // Thor
+console.log(anothername); // Hella
 
 // In heap we get the reference of the value
 let userOne = {

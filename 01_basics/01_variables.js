@@ -14,5 +14,5 @@ accountPassword = "173823"
 accountCity = "Delhi"
 console.log(accountId);
 
-// To print multiple variables we can use console.table 
+// To print multiple variables in a table we can use console.table 
 console.table([accountId, accountEmail, accountPassword, accountCity,accountState])
