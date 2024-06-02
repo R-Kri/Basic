@@ -1,7 +1,7 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 /*
-The forEach method is an array method in JavaScript used to execute a provided function once for each array element. It allows you to perform operations on each item in an array without needing to use a for loop.
+The forEach method is an array method in JavaScript used to execute a provided function once for each array element. It allows you to perform operations on each item in an array without needing to use a for loop. FOR EACH DOESN'T RETURN ANY VALUE BACK
 
 array.forEach(callbackFunction(currentValue, index, array), thisArg); // callback function doesn't have name
 
