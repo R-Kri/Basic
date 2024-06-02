@@ -1,5 +1,12 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
+/*
+The forEach method is an array method in JavaScript used to execute a provided function once for each array element. It allows you to perform operations on each item in an array without needing to use a for loop.
+
+array.forEach(callbackFunction(currentValue, index, array), thisArg);
+
+// NO NEED TO USE PARAMETERS AS THE LOOP IS SMART ENOUGH THAT IT'LL MOVE TO EVERY ELEMENT AND WE CAN CALL THE ELEMENT WHATEVER WE LIKE. IN THE BELOW EXAMPLE WE HAVE USED "val" TO CALL THE ELEMENTS. AND NO NEED TO NAME THE FUNCTION. e.g instead of "coding.forEach(greet = (item) => {})" we can write "coding.forEach((item) => {})"
+*/
 // coding.forEach( function (val){
 //     console.log(val);
 // } )
@@ -35,5 +42,5 @@ const myCoding = [
 
 myCoding.forEach( (item) => {
     
-    console.log(item.languageName);
+    console.log(item.languageName); // We have taken the access of the objects insdide an array. Hence we can extract data from the object inside an array like this. It'll help in database a lot.
 } )

@@ -1,5 +1,17 @@
 
-// // // {} This is scope, it comes with functions and if-else statements
+/*
+In JavaScript, scope refers to the accessibility of variables, functions, and objects in some particular part of your code during runtime. Scopes determine where variables and functions can be accessed or referenced. JavaScript has three main types of scope:
+
+Global Scope
+Function Scope
+Block Scope
+
+var: Function-scoped, can be re-declared and updated.
+let: Block-scoped, can be updated but not re-declared in the same block.
+const: Block-scoped, cannot be updated or re-declared, must be initialized during declaration.
+*/
+
+// // {} This is scope, it comes with functions and if-else statements
 // // if (true) {
 // //     let a = 10
 // //     const b = 20
@@ -13,13 +25,6 @@
 // // Study further about block scope and global scope.
 
 // global scope in browser console and in code environment both are different. We'll study further about this
-
-
-
-
-
-
-
 
 // function one(){
 //     const username = "hitesh"

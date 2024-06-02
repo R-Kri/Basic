@@ -34,15 +34,13 @@ if (Object.keys(emptyObj).length === 0) {
 
 // Nullish Coalescing Operator (??): null, undefined
 /* The nullish coalescing operator (`??`) is like a shortcut for choosing between two values. It returns the right-hand side if the left-hand side is `null` or `undefined`, otherwise, it returns the left-hand side. It's handy for providing default values when dealing with possibly absent variables. */
-
 let val1;
 // val1 = 5 ?? 10 // output = 5
 // val1 = null ?? 10 // output = 10
-// val1 = undefined ?? // 15 output = 5
-val1 = null ?? 10 ?? 20
+// val1 = undefined ?? 15 // output = 15
+val1 = null ?? 10 ?? 20 // 10
 
 console.log(val1);
-
 
 // Terniary Operator
 // SYNTAX

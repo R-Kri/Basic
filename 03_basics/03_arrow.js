@@ -19,7 +19,7 @@
 // //     let username = "hitesh"
 // //     console.log(this.username);// it'll show undefined cause we are not able to use "this" inside a function.
 // // }
-// // one()// When we print this putting it into a function many vakues are obtained.
+// // one() // When we print this putting it into a function many values are obtained.
 
 // // const chai = function(){
 // //     let username = "hitesh"
@@ -45,4 +45,8 @@
 const addTwo = (num1,num2) => ({username: "hitesh"}) // output{username: "hitesh"}
 console.log(addTwo(3,4));
 
+/*
+Arrow functions provide a concise syntax and lexically bind this, making them useful for callbacks, promise chains, and methods where the this context should be inherited from the enclosing scope. However, they are not suitable for all situations, such as methods that require dynamic this or functions that need their own arguments object. 
+
+*/
 
