@@ -5,6 +5,7 @@
 
 //SYNTAX
 // for (const iterator of object) { 
+    // Above object is used as a broader term, it means, on what you want to use loop, dont confused with javascript object
     // object here doesn't mean specifically only object it can be array or string as well. Object se matlab hai ki hum kiske upar loop lagane wale hai..
 // }
 
@@ -19,7 +20,7 @@ for (const greet of greetings) {
     //console.log(`Each char is ${greet}`) // here each letter will print serially in place of "greet".
 }
 
-// Maps
+// Maps = Map is use to store key, value pair
 // The map object holds key-value pairs and remembers the original insertion order of the keys.
 // A Map is a special type of object in JavaScript that lets you store collections of key-value pairs. Unlike regular objects, the keys in a Map can be of any type, such as strings, numbers, objects, or even functions.
 const map = new Map()
