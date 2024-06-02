@@ -1,6 +1,6 @@
 // // In both ways we can declare the object just the difference is first is singleton and another is not.
-// //const tinderUser = new Object() => Sigleton
- const tinderUser = {} // Not singleton
+// //const tinderUser = new Object() => Sigleton   // Constructor functions
+ const tinderUser = {} // Not singleton   // Object literals
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -71,5 +71,5 @@ console.log(Object.entries(tinderUser));
 
 // Sometimes what happens we try to extract a value which doesn't even exist, here chances of crash increases.
 // To avoid crash we can check manually by asking
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // will give true
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); // will give true if it exists
 console.log(tinderUser.hasOwnProperty('isLog')); // False

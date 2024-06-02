@@ -29,6 +29,7 @@ const newArr = myArr.join() //Adds all the elements of an array into a string, s
 console.log(myArr);
 console.log(newArr); // Both the console will print almost same output but the major change was done in the type. "join" binded the array in form 0,1,2,3,4,5,6 and converts the array into string. 
 
+
 // SLICE AND SPLICE
 
 console.log("A ",myArr);
@@ -38,6 +39,6 @@ console.log("B ",myArr);
 
 const myn2 = myArr.splice(1,3) // returns [1,2,3] (range included) and Removes elements from an array and if necessary, inserts new elements in their place, returning the deleted elements.
 console.log("C ",myArr); // returns [0,4,5] because 1,2,3 is extracted by splice method.
-console.log(myn2); 
+console.log(myn2);
 
 // NOTE: slice returns a piece of the array but it doesn't affect the original array. splice changes the original array by removing, replacing, or adding values and returns the affected values.

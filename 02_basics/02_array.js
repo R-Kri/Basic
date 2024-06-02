@@ -18,7 +18,7 @@ console.log(allHeroes);
 // Alternately we can use spread operator.
 
 const all_new_heroes = [...marvel_heroes,...dc_heroes] // This is our spread operator. More prefferable cause we can add another array with ...third_array method.
-console.log(all_new_heroes);
+console.log(all_new_heroes); // [ 'Thor', 'Ironman', 'Spiderman', 'Superman', 'Flash', 'Batman' ]
 
 // flat()= The flat() method concatenates sub-array elements.
 const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
