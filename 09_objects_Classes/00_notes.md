@@ -55,6 +55,7 @@ car.displayInfo(); // Output: Toyota Corolla
 
 
 Abstraction - Abstraction is the concept of hiding the complex implementation details and showing only the necessary features of an object. It helps in reducing programming complexity and effort.
+e.g fetch()
 ```javascript
     class Animal {
   constructor(name) {
